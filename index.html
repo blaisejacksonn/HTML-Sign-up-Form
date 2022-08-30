@@ -15,15 +15,18 @@
         <form method="get" action="results.html"> 
             <!-- TODO: Set Action and Method Properties -->
             <div>
-                <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
-                <label for="lastname">Your Last Name</label>
-                <input type="text" id="lastname" name="lastname">
+                <label for="firstname">Your First Name<span class="required-field">*</span></label>
+                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35">
+                <label for="lastname">Your Last Name<span class="required-field">*</span></label>
+                <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35">
+                <label for="age">Your Age</label>
+                <input type="number" name="age" id="age" min="21" max="120">
+                <h5>Must be 21 years old or older to enter.</h5>
                 <!-- TODO: Create a "lastname" input with type "text" -->
             </div>
             <fieldset>
                 <legend>Your Contact Info</legend>
-                <label for="email">Your Email</label>
+                <label for="email">Your Email<span class="required-field">*</span></label>
                 <input type="text" id="email" name="email"/>
                 <label for="adress">Your Address</label>
                 <input type="text" id="address" name="address"/>
@@ -81,7 +84,7 @@
                     <option value="WY">Wyoming</option>
                 </select> 
                 <label for="zipcode">Your zipcode</label>
-                <input type="text" id="zipcode" name="zipcode"/>    
+                <input type="number" id="zipcode" name="zipcode"/>    
             </fieldset>
             <!-- TODO: Make fieldset and legend -->
             <!-- Todo: Email Input -->
@@ -130,15 +133,6 @@
            
            <input type="submit" value="Enter the Contest">
 
-
-
-
-            <!-- TODO: Second fieldset -->
-            <!-- TODO: Radio buttons for selecting preferred destination -->
-            <!-- TODO: Color input for selecting favorite color -->
-            <!-- TODO: Checkboxes for selecting extra add-ons -->
-            
-            <!-- TODO: Submit Button -->
         </form>
     </main>
     <footer>
